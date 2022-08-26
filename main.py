@@ -74,8 +74,12 @@ for w, jpg in enumerate(IMG_File):
     # if 1 < w < len(IMG_File) :
     #     cv2.imshow("s.jpg", cc)
     #     cv2.waitKey(2500)
+    
+    # Detect only digits to improve accuracy
+    custom_config = r'--oem 3 --psm 6 outputbase digits'
+    #text = pytesseract.image_to_string(cc)
+    text = pytesseract.image_to_string(cc, config=custom_config))
 
-    text = pytesseract.image_to_string(cc)
     stripp = text.replace(" ", "")
     #print(stripp)
 
