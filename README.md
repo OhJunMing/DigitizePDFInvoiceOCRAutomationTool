@@ -3,4 +3,6 @@ Using Tesseract-OCR, off the shelve solution to extract serial number from scann
 
 Used openCV for Image pre-processing before applying tesseract OCR, e.g rotate, crop, grey-scale, remove noise, thresholding
 
+Used PyPDF2, pdf2image, img2pdf for handling, reading, writing, converting pdf files
+
 Limitations: Scanned copy of handwritten invoice could be inllegible for Tesseract OCR to detect
